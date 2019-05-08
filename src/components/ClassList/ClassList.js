@@ -31,10 +31,13 @@ export default class ClassList extends Component {
   
   
     return (
-      <div className="box">
+      <div>
+        <Link to='/'><button>Back to Home</button></Link>
+        <div className="box">
         <h1>{ this.props.match.params.class }</h1>
         <h2>ClassList:</h2>
           { mapped }
+      </div>
       </div>
     )
   }
